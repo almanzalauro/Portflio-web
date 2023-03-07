@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/estilos-cv.css">
+    <title>Mi Portfolio</title>
+</head>
+<body>
+    <nav class="sec-nav">
+
+        <div class="logo">    
+            <a href="#"><h1 class="title-logo"> {Lauro <span>Almanza}</span></h1></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="cv.html"><li class="title">Inicio</li></a>
+                <a href="#"><li class="title">Educación</li></a>
+                <a href="#"><li class="title">Tecnologias</li></a>
+                <a href="#"><li class="title">Contacto</li></a>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="sec-welcome section">
+        <div class="welcome-text">
+            <h1>Bienvenidos a mi portfolio</h1>
+        </div>
+        <div class="btn-welcome">
+            <a href="#sec-profile" class="btn btn-primary">Comenzar</a>
+    </section>
+
+    <section class="sec-profile section" id="sec-profile">
+            <div class="intro">
+                <h2 class="title">Sobre mi</h2>
+            </div>
+            
+            <div class="about-me">
+
+                <div class="about-me-description">
+
+                    <div class="image-profile ">
+                        <img src="../assets/img/messi.jpg" alt="image-profile">
+                    </div>
+        
+                    <div class="description-profile">
+                        <h2>Lauro Alejandro Almanza</h2>
+                        <p>Mi nombre es Lauro, soy de Buenos Aires-Argentina. Mi pasión es la innovación y el aprendizaje continuo.
+                        Actualmente me encuentro realizando la carrera de Ingenieria Electrónica en la UBA y una tecnicatura en Analisis de sistemas en el IFTS N°12.
+                        Soy una persona proactiva, que le gusta trabajar en equipo y ser pieza fundamental del mismo pudiendo lograr grandes resultados aplicando inteligencia emocional y metodologias agiles en el proceso.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="cv">
+                    <div class="descarga-cv  ">
+                        <button class="btn btn-descarga btn-primary"><a href="../docs/LAURO ALEJANDRO ALMANZA.pdf" download >Descargar CV</a></button>
+                    </div>
+
+                    <div class="view-cv ">
+                        <button class="btn btn-view btn-primary"><a href="https://drive.google.com/file/d/15sFaA9vc6n5d_PdJ4UKNIHc9RQHkS0au/view?usp=share_link" download target="_blank">Ver CV</a></button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+        
+    <section class="sec-education section">
+        <div class="intro">
+            <h2 class="title">Formación</h2>
+        </div>
+        
+        <div class="text">
+
+            <div class="education">
+
+                <span class="logo">
+                    <img class="uba-logo" src="../assets/img/UBA.png" alt="logo-uba">  
+                </span>
+                
+                <div class="description">
+                    <h4 class="description-title">Universidad de Buenos Aires</h4>
+                    <h6>Ingenieria Electrónica</h6>
+                    <p class="description-text">2018-Actualidad</p>
+                </div>
+
+            </div>
+
+            <div class="education">
+                <span class="logo">
+                    <img class="logo-ifts"src="../assets/img/ifts.png" alt="ifts-logo"> 
+                </span>
+                <div class="description">
+                    <h4 class="description-title">Instituto de formación técnica superior IFTS 12</h4>
+                    <h6>Tecnicatura Superior en Analisis de Sistemas</h6>
+                    <p class="description-text">2021-Actualidad</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="sec-proyectos section">
+        <div class="intro">
+            <h2 class="title">Mis proyectos</h2>
+        </div>
+        
+        <div class="projects-container">
+
+            <div class="projects row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="project col">
+                    <div class="card h-100">
+                        <img src="../assets/img_projects/galeria.jpg" class="card-img-top" alt="project-hero">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Galeria Argentina</h5>
+                            <p class="card-text">Galeria de imagenes personales aplicando grid y flexbox.
+
+                            </p>
+                        </div>
+                        
+                        <div class="card-footer">
+
+                            <a href="https://github.com/almanzalauro/Galeria" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://thunderous-truffle-9f09ff.netlify.app" target="_blank"><i class="fa-sharp fa-solid fa-earth-americas"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project col">
+                    <div class="card h-100">
+                        <img src="../assets/img_projects/illustration-hero.svg" class="card-img-top" alt="project-hero">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen de pedido</h5>
+                            <p class="card-text">Resolucion hecha para el desafio propuesto por Fronted Mentor.</p>
+                        </div>
+                        
+                        <div class="card-footer">
+
+                            <a href="https://github.com/almanzalauro/Proyectos/tree/main/Order%20sumary%20card" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://desafiolauro.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-earth-americas"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="project col">
+                    <div class="card h-100">
+                        <img src="../assets/img_projects/image-equilibrium.jpg" class="card-img-top" alt="equilibrium-project">
+
+                        <div class="card-body">
+                            <h5 class="card-title">NFT card</h5>
+                            <p class="card-text">Resolucion hecha para el desafio propuesto por Fronted Mentor.</p>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://github.com/almanzalauro/Proyectos/tree/main/NFT%20card" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://sparkling-quokka-5cbd44.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-earth-americas"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project col">
+                    <div class="card h-100">
+                        <img src="../assets/img_projects/image-product-mobile.jpg" class="card-img-top" alt="perfum-project">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Vista previa de producto</h5>
+                            <p class="card-text">Resolucion hecha para el desafio propuesto por Fronted Mentor.</p>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://github.com/almanzalauro/Proyectos/tree/main/Card-perfum" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://desafiobylauro.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-earth-americas"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project col">
+                    <div class="card h-100">
+                        <img src="../assets/img_projects/image-qr-code.png" class="card-img-top" alt="qr-project">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card QR</h5>
+                            <p class="card-text">Resolucion hecha para el desafio propuesto por Fronted Mentor.</p>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <a href="https://github.com/almanzalauro"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-earth-americas"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section class="sec-technologies section">
+        <div class="intro">
+            <h2 class="title">Tecnologías</h2>
+        </div>
+
+        <div class="technologies-icon">
+            <i class="fa-brands fa-html5 "><p>Html5</p></i>
+            <i class="fa-brands fa-css3"><p>Css</p></i>
+            <i class="fa-brands fa-bootstrap"><p>Bootstrap</p></i>
+            <i class="fa-brands fa-python"><p>Python</p></i>
+            <i class="fa-brands fa-sass"><p>Sass</p></i>
+        </div>
+    </section>
+
+    <footer class="sec-footer section">
+        
+        <div class="created-by">
+            <h6>Lauro almanza</h6>
+            <p>2023</p>
+        </div>
+        
+        <div class="social-links">
+            <ul>
+                <a href="http://www.instagram.com/almanza.lauro"><li><i class="fa-brands fa-instagram instagram-logo"></i></li></a>
+                <a href="http://www.github.com/lauro.almanza"><li><i class="fa-brands fa-github github-logo"></i></li></a>
+                <a href="http://www.linkedin.com/in/lauro.almanza"><li><i class="fa-brands fa-linkedin linkedin-logo"></i></li></a>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+<!--Iconos de fontawesome.com-->
+<script src="https://kit.fontawesome.com/c02a0c964e.js" crossorigin="anonymous"></script>
+
+<!--Iconos de bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

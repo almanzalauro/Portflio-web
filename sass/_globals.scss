@@ -1,0 +1,350 @@
+
+//sass --watch sass/index.scss css/estilos-cv.css
+
+@use "components";
+
+@mixin text-style{
+    h2,h4,h5,h6{
+        color:components.$color-title;
+    }
+    p{
+        color:components.$color-text;
+    }
+}
+html{
+    min-width: 100vw;
+}
+body{
+    background-color: components.$color-background;
+    margin:0;
+    padding:0;
+    
+}
+
+.sec-nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height:4rem;
+    
+}
+
+
+.sec-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    .welcome-text{
+        h1{
+            letter-spacing: 5px;
+            color:components.$color-title;
+        }
+    }
+    .btn-welcome{
+        padding:0 2rem 0 0;
+        margin-top: 1rem;
+    }
+}
+
+.sec-profile{
+    @include text-style();
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .about-me-description{ 
+            width: 100%;
+            display:flex;
+            align-items:center;
+            gap:1rem;
+            .image-profile{
+                img{
+                    border-radius:100%;
+                    max-width: 300px;
+                    min-width: 150px; 
+                }
+            }
+            .description-profile{
+                padding-left:10px;
+            }
+        }
+
+        .cv{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            .descarga-cv, .view-cv{
+                margin-right:1rem;
+                button{
+
+                    a{
+                        color:white;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    
+}
+
+.sec-education{
+    margin-top:8rem;
+    @include text-style();
+    .text{
+        display: flex;
+        align-items: center;
+        margin-top:2rem;
+        gap:2px;
+        .education{
+            //padding:rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            .logo{
+                padding:0 2rem;
+                margin-bottom: 10px;
+                img{
+                    width: 100px;
+                }
+                .logo-ifts{
+                    width: 80px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+}
+
+.sec-proyectos{
+    @include text-style();
+
+    .projects-container{
+        
+        .projects{
+            margin: 2rem;
+            .card{
+                border: 1px solid white;
+                border-top-left-radius: 40px 40px; 
+                border-top-right-radius: 40px 40px;               
+                img{
+                    border-top-left-radius: 40px 40px; 
+                    border-top-right-radius: 40px 40px;               
+                }
+                .card-body{
+                    border-top: 3px solid white;
+                }
+                .card-footer{
+                    border:none;
+                    display: flex;
+                    text-align: center;
+                    justify-content:space-around;
+                    padding-bottom: 1rem;
+                    i{
+                        color:components.$color-text;
+                        font-size: 1.8rem;
+                        &:hover{
+                            color:#ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.sec-technologies{
+    .intro{
+        @include text-style();
+    }
+    .technologies-icon{
+        margin-top:2rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        i{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+
+        .fa-html5{
+            &:hover{
+               color:orangered; 
+            }
+        }
+
+        .fa-css3{
+            &:hover{
+                color:rgb(49, 49, 250);
+            }
+        }
+
+        .fa-bootstrap{
+            &:hover{
+                color:rgb(112, 0, 168);
+            }
+        }
+
+        .fa-python{
+            &:hover{
+                color: rgb(216, 198, 0);
+            }
+        }
+        
+        .fa-sass{
+            &:hover{
+                color: rgb(211, 0, 218);
+            }
+        }
+        
+    }
+}
+
+.sec-footer{
+    margin-bottom: -5rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    .created-by{
+        color: #eaeaeac4;
+        font-size: 0.5rem;
+    }
+    
+    .social-links{
+        ul{
+            a{
+                
+                padding-right: 2rem;
+                color:components.$color-text;
+                li{
+                    .instagram-logo{
+                        &:hover{
+                            color:rgb(255, 57, 179);
+                        }
+                    }
+                    .github-logo{
+                        &:hover{
+                            color:black;
+
+                        }
+                    }
+
+                    .linkedin-logo{
+                        &:hover{
+                            color:rgb(40, 40, 251);
+                            max-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px){
+    .section{
+        padding:0 0 0 1rem;
+        margin:0 0;
+    }
+
+    .sec-nav{
+        flex-wrap: wrap;
+        
+    }
+
+    .sec-profile{
+        .about-me{
+            .about-me-description{
+                display:flex;
+                flex-direction: column;
+                padding:0;
+                margin:0;
+            }
+
+            
+        }
+    }
+
+    .sec-education{
+        display: block;
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            .education{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .sec-proyectos{
+        .proyects{
+            flex-direction: column;
+            .card{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .sec-technologies{
+        margin-bottom: 1rem;
+        .technologies-icon{
+            flex-direction: column;
+            i{
+                font-size:2rem;
+            }
+        }
+    }
+
+    .sec-footer{
+        flex-direction: column;
+        .created-by{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-links{
+            ul{    
+                a{
+                    li{
+                        i{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+@media (max-width:320px){
+    .sec-profile{
+        .about-me{
+            .about-me-description{
+                display:flex;
+                flex-direction: column;
+                padding:0;
+                margin:0;
+            }
+
+            .cv{
+                display:flex;
+                flex-direction: column;
+                gap:6px;
+            }
+        }
+    }
+}

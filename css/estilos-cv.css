@@ -1,0 +1,391 @@
+@keyframes traslacion {
+  0% {
+    visibility: hidden;
+    transform: translateX(-50%) translateY(0%);
+  }
+  75% {
+    transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: translateX(0%) translatey(0%);
+  }
+}
+@keyframes animation_icon_technologies {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg) scale(1.4);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg) scale(1.4);
+  }
+  to {
+    transform: scale(1.2);
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg) scale(1.4);
+  }
+}
+.btn-primary, .btn-descarga, .btn-view {
+  font-weight: 600;
+}
+.btn-primary:hover, .btn-descarga:hover, .btn-view:hover {
+  background-color: #0d2655;
+  transition: 0.5s;
+  border: none;
+}
+
+.sec-nav .logo a {
+  text-decoration: none;
+}
+.sec-nav .logo a:hover h1 {
+  font-weight: 600;
+  color: #7a8fba;
+}
+.sec-nav .logo a:hover h1 span {
+  font-weight: 700;
+  color: #ffffff;
+}
+.sec-nav .logo a h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.sec-nav .logo a h1 span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7a8fba;
+}
+.sec-nav .menu {
+  margin-top: 1rem;
+  justify-content: center;
+}
+.sec-nav .menu a {
+  margin-bottom: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sec-nav .menu a:hover {
+  color: #7a8fba;
+  text-decoration: none;
+}
+.sec-nav .menu a li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  list-style: none;
+  display: inline;
+  margin-right: 1.5rem;
+}
+
+.sec-welcome {
+  animation: traslacion 0.5s forwards alternate;
+}
+
+.section {
+  margin: 0 8rem 2rem 8rem;
+}
+
+.sec-profile .image-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container .projects .card {
+  background-color: transparent;
+}
+
+.sec-technologies .technologies-icon i {
+  font-size: 3rem;
+  color: #c5d6f9;
+}
+.sec-technologies .technologies-icon i:hover {
+  animation-name: animation_icon_technologies;
+  animation-duration: 1.5s;
+  transition: 0.4s;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.sec-technologies .technologies-icon i p {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.sec-footer .social-links ul {
+  display: flex;
+}
+.sec-footer .social-links ul a {
+  text-decoration: none;
+}
+.sec-footer .social-links ul a li {
+  list-style: none;
+}
+.sec-footer .social-links ul a li i {
+  font-size: 2.3rem;
+}
+
+html {
+  min-width: 100vw;
+}
+
+body {
+  background-color: #040d1e;
+  margin: 0;
+  padding: 0;
+}
+
+.sec-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+.sec-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.sec-welcome .welcome-text h1 {
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+.sec-welcome .btn-welcome {
+  padding: 0 2rem 0 0;
+  margin-top: 1rem;
+}
+
+.sec-profile h2, .sec-profile h4, .sec-profile h5, .sec-profile h6 {
+  color: #ffffff;
+}
+.sec-profile p {
+  color: #c5d6f9;
+}
+.sec-profile .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sec-profile .about-me .about-me-description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sec-profile .about-me .about-me-description .image-profile img {
+  border-radius: 100%;
+  max-width: 300px;
+  min-width: 150px;
+}
+.sec-profile .about-me .about-me-description .description-profile {
+  padding-left: 10px;
+}
+.sec-profile .about-me .cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-profile .about-me .cv .descarga-cv, .sec-profile .about-me .cv .view-cv {
+  margin-right: 1rem;
+}
+.sec-profile .about-me .cv .descarga-cv button a, .sec-profile .about-me .cv .view-cv button a {
+  color: white;
+  text-decoration: none;
+}
+
+.sec-education {
+  margin-top: 8rem;
+}
+.sec-education h2, .sec-education h4, .sec-education h5, .sec-education h6 {
+  color: #ffffff;
+}
+.sec-education p {
+  color: #c5d6f9;
+}
+.sec-education .text {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2px;
+}
+.sec-education .text .education {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.sec-education .text .education .logo {
+  padding: 0 2rem;
+  margin-bottom: 10px;
+}
+.sec-education .text .education .logo img {
+  width: 100px;
+}
+.sec-education .text .education .logo .logo-ifts {
+  width: 80px;
+  height: 90px;
+}
+
+.sec-proyectos h2, .sec-proyectos h4, .sec-proyectos h5, .sec-proyectos h6 {
+  color: #ffffff;
+}
+.sec-proyectos p {
+  color: #c5d6f9;
+}
+.sec-proyectos .projects-container .projects {
+  margin: 2rem;
+}
+.sec-proyectos .projects-container .projects .card {
+  border: 1px solid white;
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+}
+.sec-proyectos .projects-container .projects .card img {
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+}
+.sec-proyectos .projects-container .projects .card .card-body {
+  border-top: 3px solid white;
+}
+.sec-proyectos .projects-container .projects .card .card-footer {
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+.sec-proyectos .projects-container .projects .card .card-footer i {
+  color: #c5d6f9;
+  font-size: 1.8rem;
+}
+.sec-proyectos .projects-container .projects .card .card-footer i:hover {
+  color: #ffffff;
+}
+
+.sec-technologies .intro h2, .sec-technologies .intro h4, .sec-technologies .intro h5, .sec-technologies .intro h6 {
+  color: #ffffff;
+}
+.sec-technologies .intro p {
+  color: #c5d6f9;
+}
+.sec-technologies .technologies-icon {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec-technologies .technologies-icon i {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sec-technologies .technologies-icon .fa-html5:hover {
+  color: orangered;
+}
+.sec-technologies .technologies-icon .fa-css3:hover {
+  color: rgb(49, 49, 250);
+}
+.sec-technologies .technologies-icon .fa-bootstrap:hover {
+  color: rgb(112, 0, 168);
+}
+.sec-technologies .technologies-icon .fa-python:hover {
+  color: rgb(216, 198, 0);
+}
+.sec-technologies .technologies-icon .fa-sass:hover {
+  color: rgb(211, 0, 218);
+}
+
+.sec-footer {
+  margin-bottom: -5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-footer .created-by {
+  color: rgba(234, 234, 234, 0.768627451);
+  font-size: 0.5rem;
+}
+.sec-footer .social-links ul a {
+  padding-right: 2rem;
+  color: #c5d6f9;
+}
+.sec-footer .social-links ul a li .instagram-logo:hover {
+  color: rgb(255, 57, 179);
+}
+.sec-footer .social-links ul a li .github-logo:hover {
+  color: black;
+}
+.sec-footer .social-links ul a li .linkedin-logo:hover {
+  color: rgb(40, 40, 251);
+  max-height: 30px;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 0 0 0 1rem;
+    margin: 0 0;
+  }
+  .sec-nav {
+    flex-wrap: wrap;
+  }
+  .sec-profile .about-me .about-me-description {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .sec-education {
+    display: block;
+  }
+  .sec-education .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-education .text .education {
+    flex-direction: column;
+  }
+  .sec-proyectos .proyects {
+    flex-direction: column;
+  }
+  .sec-proyectos .proyects .card {
+    margin-bottom: 2rem;
+  }
+  .sec-technologies {
+    margin-bottom: 1rem;
+  }
+  .sec-technologies .technologies-icon {
+    flex-direction: column;
+  }
+  .sec-technologies .technologies-icon i {
+    font-size: 2rem;
+  }
+  .sec-footer {
+    flex-direction: column;
+  }
+  .sec-footer .created-by {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-footer .social-links ul a li i {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .sec-profile .about-me .about-me-description {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .sec-profile .about-me .cv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/*# sourceMappingURL=estilos-cv.css.map */

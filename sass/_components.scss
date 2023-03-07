@@ -1,0 +1,162 @@
+$color-background:#040d1e;
+$color-title:#ffffff;
+$color-title-span:#7a8fba;
+$color-title-hover:#7a8fba;
+$color-text:#c5d6f9;
+
+@keyframes traslacion{
+    0%{
+        visibility:hidden;
+        transform: translateX(-50%) translateY(0%);
+    }
+
+    75%{
+        transform: translateX(0%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translatey(0%);
+    }
+}
+
+@keyframes animation_icon_technologies{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg) scale(1.4);
+	}
+    50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg) scale(1.4);
+	} 
+	to {
+        transform: scale(1.2);
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg) scale(1.4);
+		}
+}
+
+
+.btn-primary, .btn-descarga, .btn-view{
+    font-weight:600;
+    &:hover{
+        background-color: #0d2655;
+        transition: 0.5s;
+        border:none;
+    }
+    
+}
+
+.sec-nav{
+    .logo{
+        a{
+            text-decoration: none;
+            
+            &:hover{
+                h1{
+                    font-weight: 600;
+                    color:$color-title-span;
+                    span{
+                        font-weight: 700;
+                        color:$color-title;
+                    }
+                }
+            }
+            h1{
+                font-size:1.5rem;
+                font-weight: 700;
+                color:$color-title;
+                span{
+                    font-size:1.5rem;
+                    font-weight: 600;
+                    color:$color-title-span;
+                }
+            }
+        }
+    }
+    .menu{
+        margin-top: 1rem;
+        justify-content:center;
+        a{
+            margin-bottom: 0;
+            color:$color-title;
+            text-decoration:none;
+            &:hover{
+                color:$color-title-span;
+                text-decoration:none;
+            }
+            
+            li{
+                font-size:1.10rem;
+                font-weight: 600;
+                list-style: none;
+                display: inline;
+                margin-right: 1.5rem;
+                
+
+            }
+        }
+    }
+}
+
+.sec-welcome{
+    animation: traslacion 0.5s forwards alternate;
+}
+
+.section{
+    margin: 0 8rem 2rem 8rem;
+}
+.sec-profile{
+
+    .image-profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+
+.projects-container{
+    .projects{
+        .card{
+        background-color:transparent;
+        }
+    }
+}
+
+.sec-technologies{
+    .technologies-icon{
+        i{
+            font-size: 3rem;
+            color:$color-text;
+            &:hover{
+                animation-name: animation_icon_technologies;
+                animation-duration:1.5s;
+                transition: 0.4s;
+                transform: scale(1.4);
+                cursor: pointer;
+            }
+            p{
+                font-size: 1rem;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.sec-footer{
+    .social-links{
+        ul{
+            display:flex;
+            a{
+                text-decoration: none;
+                li{
+                    list-style: none;
+                    i{
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
