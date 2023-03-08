@@ -120,7 +120,7 @@
   list-style: none;
 }
 .sec-footer .social-links ul a li i {
-  font-size: 2.3rem;
+  font-size: 10rem;
 }
 
 html {
@@ -196,7 +196,7 @@ body {
 }
 
 .sec-education {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 .sec-education h2, .sec-education h4, .sec-education h5, .sec-education h6 {
   color: #ffffff;
@@ -336,8 +336,12 @@ body {
     padding: 0;
     margin: 0;
   }
+  .sec-profile .about-me .description-profile p {
+    margin-right: 0.5rem;
+  }
   .sec-education {
     display: block;
+    margin-top: 2rem;
   }
   .sec-education .text {
     display: flex;
@@ -346,12 +350,6 @@ body {
   .sec-education .text .education {
     flex-direction: column;
   }
-  .sec-proyectos .proyects {
-    flex-direction: column;
-  }
-  .sec-proyectos .proyects .card {
-    margin-bottom: 2rem;
-  }
   .sec-technologies {
     margin-bottom: 1rem;
   }
@@ -359,7 +357,7 @@ body {
     flex-direction: column;
   }
   .sec-technologies .technologies-icon i {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .sec-footer {
     flex-direction: column;
