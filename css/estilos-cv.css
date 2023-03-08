@@ -147,6 +147,9 @@ body {
   justify-content: center;
   height: 90vh;
 }
+.sec-welcome .welcome-text {
+  text-align: center;
+}
 .sec-welcome .welcome-text h1 {
   letter-spacing: 5px;
   color: #ffffff;
@@ -328,7 +331,13 @@ body {
     margin: 0 0;
   }
   .sec-nav {
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .sec-nav .logo, .sec-nav .menu {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .sec-profile .about-me .about-me-description {
     display: flex;
@@ -337,7 +346,7 @@ body {
     margin: 0;
   }
   .sec-profile .about-me .description-profile p {
-    margin-right: 0.5rem;
+    margin-right: 0;
   }
   .sec-education {
     display: block;
@@ -350,6 +359,12 @@ body {
   .sec-education .text .education {
     flex-direction: column;
   }
+  .sec-proyectos .intro {
+    margin-top: 2rem;
+  }
+  .sec-proyectos .projects-container .projects {
+    margin-top: 0rem;
+  }
   .sec-technologies {
     margin-bottom: 1rem;
   }
@@ -357,6 +372,7 @@ body {
     flex-direction: column;
   }
   .sec-technologies .technologies-icon i {
+    margin-bottom: 0.5rem;
     font-size: 3rem;
   }
   .sec-footer {

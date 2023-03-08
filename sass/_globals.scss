@@ -37,12 +37,14 @@ body{
     justify-content: center;
     height: 90vh;
     .welcome-text{
+        text-align: center;
         h1{
             letter-spacing: 5px;
             color:components.$color-title;
         }
     }
     .btn-welcome{
+        
         padding:0 2rem 0 0;
         margin-top: 1rem;
     }
@@ -260,7 +262,13 @@ body{
     }
 
     .sec-nav{
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 3rem;
+        .logo,.menu{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
         
     }
 
@@ -274,7 +282,7 @@ body{
             }
             .description-profile{
                 p{
-                    margin-right: 0.5rem;
+                    margin-right: 0;
                 }
             }
 
@@ -294,13 +302,23 @@ body{
         }
     }
 
-    
+    .sec-proyectos{
+        .intro{
+            margin-top: 2rem;
+        }
+        .projects-container{
+            .projects{
+                margin-top: 0rem;
+            }
+        }
+    }
 
     .sec-technologies{
         margin-bottom: 1rem;
         .technologies-icon{
             flex-direction: column;
             i{
+                margin-bottom: 0.5rem;
                 font-size:3rem;
             }
         }
