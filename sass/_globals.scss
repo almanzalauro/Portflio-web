@@ -66,8 +66,10 @@ body{
             gap:1rem;
             .image-profile{
                 img{
-                    border-radius:100%;
-                    max-width: 300px;
+                    border-radius: 200px 200px 200px 200px;
+                    -moz-border-radius: 200px 200px 200px 200px;
+                    -webkit-border-radius: 200px 200px 200px 200px;
+                    max-width: 200px;
                     min-width: 150px; 
                 }
             }
@@ -134,6 +136,8 @@ body{
         .projects{
             margin: 2rem;
             .card{
+                //height: 10px;
+                //width: 350px;
                 border:none;
                 border-top-left-radius: 40px 40px; 
                 border-top-right-radius: 40px 40px; 
@@ -149,6 +153,7 @@ body{
                     border-top-right-radius: 40px 40px;               
                 }
                 .card-body{
+                    
                     border-top: 3px solid white;
                 }
                 .card-footer{

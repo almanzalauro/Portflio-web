@@ -178,8 +178,10 @@ body {
   gap: 1rem;
 }
 .sec-profile .about-me .about-me-description .image-profile img {
-  border-radius: 100%;
-  max-width: 300px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  max-width: 200px;
   min-width: 150px;
 }
 .sec-profile .about-me .about-me-description .description-profile {
