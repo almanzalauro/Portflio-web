@@ -31,6 +31,7 @@ body{
 
 
 .sec-welcome{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,21 +61,26 @@ body{
         width: 100%;
         
         .about-me-description{ 
+            padding-top:2rem;
             width: 100%;
             display:flex;
             align-items:center;
-            gap:1rem;
+            gap:2rem;
             .image-profile{
                 img{
                     border-radius: 200px 200px 200px 200px;
                     -moz-border-radius: 200px 200px 200px 200px;
                     -webkit-border-radius: 200px 200px 200px 200px;
-                    max-width: 200px;
-                    min-width: 150px; 
+                    max-width: 300px;
+                    min-width: 250px; 
                 }
             }
             .description-profile{
-                padding-left:10px;
+                padding:0 1rem;
+                text-align:justify;
+                p{
+                    font-size: 1.3rem;
+                }
             }
         }
 
@@ -85,7 +91,6 @@ body{
             .descarga-cv, .view-cv{
                 margin-right:1rem;
                 button{
-
                     a{
                         color:white;
                         text-decoration:none;
@@ -100,28 +105,40 @@ body{
 }
 
 .sec-education{
+    .intro{
+        padding-bottom: 2rem;
+    }
     margin-top: 2rem;
     @include text-style();
     .text{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-top:2rem;
+        text-align: center;
         gap:2px;
         .education{
-            //padding:rem;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-
+            padding-bottom:2rem;
             .logo{
+                width: 100%;
                 padding:0 2rem;
-                margin-bottom: 10px;
                 img{
                     width: 100px;
                 }
                 .logo-ifts{
                     width: 80px;
                     height: 90px;
+                }
+            }
+
+            .description{
+                h4{
+                    font-size:1.8rem;
+                }
+                h6{
+                    font-size:1.5rem;
+                }
+                p{
+                    font-style: italic;
                 }
             }
         }
@@ -194,30 +211,35 @@ body{
 
         .fa-html5{
             &:hover{
-                color:orangered; 
+                cursor: default;
+                color:blue; 
             }
         }
 
         .fa-css3{
             &:hover{
+                cursor: default;
                 color:rgb(49, 49, 250);
             }
         }
 
         .fa-bootstrap{
             &:hover{
+                cursor: default;
                 color:rgb(112, 0, 168);
             }
         }
 
         .fa-python{
             &:hover{
+                cursor: default;
                 color: rgb(216, 198, 0);
             }
         }
         
         .fa-sass{
             &:hover{
+                cursor: default;
                 color: rgb(211, 0, 218);
             }
         }
